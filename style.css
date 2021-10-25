@@ -16,24 +16,45 @@ p {
 
 /* Navigation Links */
 /* -----------------*/
+@media only screen and (max-width: 1400px) {
 .background-hero {
-    overflow: hidden;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    }
 } 
+@media only screen and (max-width: 750px) {
+    .background-hero {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        }
+    }
+@media only screen and (max-width: 749px) {
+        .background-hero {
+            width:100%;
+            height: 100%;
+            position: absolute;
+            }
+        }
 .hero-mers {
     background: url("Images/6044438.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    overflow: hidden;
 }
+
 .hero-index {
     background-image: url("Images/1487538.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    overflow: hidden;
 }
+
 #link-outer-div {
     text-align: center; 
     width: 100%;
@@ -48,17 +69,7 @@ p {
 }
 
 /* -----------------*/
-#myDIV {
-    position: absolute;
-    width: 250px;
-    height: 100px;  
-    color: red;
-    bottom: 0px;
-    animation: mymove 6s infinite;
-} 
-@keyframes mymove {
-    40% {bottom: 300px;}
-}
+
 #link-style {
     color: orange;
     text-decoration: none;
@@ -69,7 +80,7 @@ p {
 
 .botton-text-relax {
     padding: 16px 32px;
-    text-align: center;
+    text-align: center ;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -120,7 +131,7 @@ p {
 
 .intro {
     max-height: 100vh;
-    overflow: hidden;
+    max-width: 100vw;
 }
 .titlee{
     z-index: 99999;
@@ -150,13 +161,21 @@ p {
     width: 100%;
     height: auto;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
     .video-media {
         width: auto;
         height: 100%;
     }
 }
-
-.h-one {
-color: chartreuse;
+@media only screen and (max-width: 750px) {
+    .video-media {
+        width: auto;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 749px) {
+    .video-media {
+        width: auto;
+        height: 100%;
+    }
 }
