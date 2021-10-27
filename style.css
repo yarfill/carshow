@@ -17,31 +17,20 @@ p {
 /* Navigation Links */
 /* -----------------*/
 
-@media only screen and (max-width: 1400px) {
-@media only screen and (max-width: 750px) {
-@media only screen and (max-width: 749px) {
 .background-hero {
     width: 100%;
     height: 100%;
     position: absolute;
     }
-    }
+
+@media only screen and (max-width: 1200px) {
+.background-hero {
+    width: 100%;
+    height: 100%;
+    position: absolute;
     }
 } 
-/* @media only screen and (max-width: 750px) {
-    .background-hero {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        }
-    }
-@media only screen and (max-width: 749px) {
-        .background-hero {
-            width:100%;
-            height: 100%;
-            position: absolute;
-            }
-        } */
+
 .hero-mers {
     background: url("Images/6044438.jpg");
     background-repeat: no-repeat;
@@ -145,7 +134,7 @@ p {
     content: "";
     display: block;
     width: 100%;
-    height: 100%;
+    height: 120%;
 
     background-color: rgba(0, 0, 0, .6);
 
@@ -153,6 +142,7 @@ p {
     top: 0;
     left: 0;
     z-index: 2;
+    overflow: hidden;
 
 }
 
@@ -172,15 +162,17 @@ p {
         height: 100%;
     }
 }
-@media only screen and (max-width: 750px) {
-    .video-media {
-        width: auto;
-        height: 100%;
-    }
+
+.container video {
+    position: relative;
+    z-index: 0;
 }
-@media only screen and (max-width: 749px) {
-    .video-media {
-        width: auto;
-        height: 100%;
-    }
+.botton-homepage-speed:after {
+    position:relative;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 16px;
+    margin: 4px 2px;
 }
