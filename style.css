@@ -146,11 +146,15 @@ p {
 
 }
 
-.div-inner-video {
-    position: absolute;
+.overlay {
+    position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
+    font-size: 32;
     overflow: hidden;
+    
+    color: red;
 }
 .video-media {
     width: 100%;
@@ -158,8 +162,8 @@ p {
 }
 @media only screen and (max-width: 1200px) {
     .video-media {
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -167,12 +171,15 @@ p {
     position: relative;
     z-index: 0;
 }
-.botton-homepage-speed:after {
+.botton-homepage-speed::after {
+
+color: white;
+
     position:relative;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
-    display: none;
+    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
 }
