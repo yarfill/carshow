@@ -151,12 +151,12 @@ p {
     
     color: red;
 }
-.video-media {
+.video-media-bmw {
     width: 100%;
     height: auto;
 }
 @media only screen and (max-width: 1200px) {
-    .video-media {
+    .video-media-bmw {
         width: 100%;
         height: auto;
     }
@@ -166,36 +166,18 @@ p {
     position: relative;
     z-index: 0;
 }
-
-.botton-homepage-speed {
-    position:absolute;
-    text-align: center;
+.botton-homepage {
     text-decoration: none;
     display: block;
-     margin: 4px 2px; 
-}
-.container .botton-homepage-speed {
     position: absolute;
     top: 0%;
-    left: 0%;
+    left: 50%;
     background-color: aliceblue;
     color: black;
     font-size: 16px;
     padding: 16px 32px;
     border: none;
     cursor: pointer;
-}
-.botton-homepage-relax {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    background-color: aliceblue;
-    color: black;
-    font-size: 16px;
-    padding: 16px 32px;
-    border: none;
-    cursor: pointer;
-    text-decoration: none;  
 }
 .details-bmw {
     position: absolute;
@@ -204,4 +186,12 @@ p {
     width: auto;
     height: 200px;
     border: 0;
+}
+.details-merc {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: auto;
+    height: 150px;
+    border: 0;  
 }
