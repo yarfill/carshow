@@ -130,7 +130,7 @@ p {
 .titlee{
     z-index: 99999;
 }
-.intro:after {
+/* .intro:after {
     content: "";
     display: block;
     width: 100%;
@@ -144,7 +144,7 @@ p {
     z-index: 2;
     overflow: hidden;
 
-}
+} */
 
 .overlay {
     position: fixed;
@@ -171,15 +171,34 @@ p {
     position: relative;
     z-index: 0;
 }
-.botton-homepage-speed::after {
 
-color: white;
-
-    position:relative;
-    padding: 16px 32px;
+.botton-homepage-speed {
+    position:absolute;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
+     margin: 4px 2px; 
+}
+.container .botton-homepage-speed {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: aliceblue;
+    color: black;
     font-size: 16px;
-    margin: 4px 2px;
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+}
+.botton-homepage-relax {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: aliceblue;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;  
 }
