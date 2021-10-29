@@ -197,3 +197,11 @@ p {
     cursor: pointer;
     text-decoration: none;  
 }
+.details-bmw {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    width: auto;
+    height: 200px;
+    border: 0;
+}
