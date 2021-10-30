@@ -64,13 +64,6 @@ p {
 
 /* -----------------*/
 
-#link-style {
-    color: orange;
-    text-decoration: none;
-    width: 100%;
-    height: 100px;
-    transition: 2s;
-}
 .mers-botton-style {
     background-color: black;
     color: white;
@@ -146,10 +139,7 @@ p {
     top: 0;
     left: 0;
     z-index: 1;
-    font-size: 32;
     overflow: hidden;
-    
-    color: red;
 }
 .video-media-bmw {
     width: 100%;
@@ -170,7 +160,7 @@ p {
     text-decoration: none;
     display: block;
     position: absolute;
-    top: 0%;
+    top: 50%;
     left: 50%;
     background-color: aliceblue;
     color: black;
@@ -178,6 +168,23 @@ p {
     padding: 16px 32px;
     border: none;
     cursor: pointer;
+    transform: translate(-50%, -50%);
+    }
+@media only screen and (max-width: 1200px) {
+.botton-homepage {
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: aliceblue;
+    color: black;
+    font-size: 16px;
+    padding: 16px 32px;
+    border: none;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    }
 }
 .details-bmw {
     position: absolute;
@@ -187,6 +194,16 @@ p {
     height: 200px;
     border: 0;
 }
+@media only screen and (max-width: 1200px) {
+    .details-bmw {
+        position: absolute;
+        top: 250px;
+        left: 100px;
+        width: auto;
+        height: 200px;
+        border: 0;
+    }
+}
 .details-merc {
     position: absolute;
     top: 250px;
@@ -195,3 +212,48 @@ p {
     height: 150px;
     border: 0;  
 }
+@media only screen and (max-width: 1200px) {
+    .details-merc {
+        position: absolute;
+        top: 250px;
+        left: 0;
+        width: auto;
+        height: 150px;
+        border: 0;  
+    }
+}
+.container {
+    text-align: center;
+    color: black;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
